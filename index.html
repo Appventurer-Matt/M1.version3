@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!-- darkmode ON with class="dark" -->
+<html lang="en" class="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Travolgi">
+	<!-- favicons -->
+	<link rel="icon" href="./assets/imgs/favicon-192.png" />
+	<link rel="apple-touch-icon" href="./assets/imgs/favicon-192.png" />
+	<!-- title page & SEO meta -->
+	<title>Creative Demo | Cyberwind - Tailwind CSS Multipurpose App, Landing, IT Solutions and Business Template</title>
+	<meta name="description" content="Multipurpose premium HTML5 template created with Tailwind CSS, designed with modern graphics and advanced features, is ideal for creating apps, landing pages, websites and business presentations">
+	<meta name="keywords" content="crypto template, tailwind css, app, user experience, it solutions, business services, agency, web design, creative template, landing page, saas, website, html template, website template, landing page, responsive, html5 themes, multipurpose template, html, html5, css, template, themes">
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+<body class="dark:bg-black dark:text-white">
+	<!-- header -->
+	<header class="fixed top-0 w-full bg-white/90 dark:bg-black/90 py-4 px-2 md:py-7 md:px-12 flex justify-between items-center md:gap-4 text-lg z-50">
+		<!-- your logo here -->
+		<a href="/" class="flex items-center p-2">
+			<!-- light logo -->
+			<img src="./assets/imgs/logo.svg" class="dark:hidden w-40" alt="Cyberwind template logo">
+			<!-- dark logo -->
+			<img src="./assets/imgs/logo-white.svg" class="hidden dark:block w-40" alt="Cyberwind template logo">
+		</a>
+
+		<div class="relative flex items-center order-2">
+			<!-- navbar mobile button -->
+			<button class="flex justify-end p-4 md:hidden" id="nav-toggle" aria-controls="navbar" aria-expanded="false">
+				<!-- open icon -->
+				<i class="fa-light fa-bars-staggered text-2xl" id="nav-toggle-open"></i>
+				<!-- close icon -->
+				<i class="fa-light fa-xmark text-2xl hidden" id="nav-toggle-close"></i>
+			</button>
+
+			<!-- navigation -->
+			<nav class="hidden absolute top-20 right-0 py-6 px-12 border border-grey-500 md:relative md:top-0 md:p-0 md:pr-4 md:border-0 md:flex md:items-stretch bg-white/90 md:bg-transparent z-50" id="navbar" data-visible="false">
+				<ul class="flex flex-col md:flex-row gap-6 md:gap-10 font-semibold">
+					<li>
+						<a href="#top" class="hover:text-lime-500 transition-all">Home</a>
+					</li>
+					<li>
+						<a href="#agency" class="hover:text-lime-500 transition-all">Agency</a>
+					</li>
+					<li>
+						<a href="#project" class="hover:text-lime-500 transition-all">Project</a>
+					</li>
+					<li>
+						<a href="#blog" class="hover:text-lime-500 transition-all">Blog</a>
+					</li>
+					<li>
+						<a href="#contact" class="hover:text-lime-500 transition-all">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- action buttons -->
+		<div class="flex items-center gap-2 md:order-2">
+			<!-- cta -->
+			<a href="#" class="py-3 px-6 ml-2 md:ml-0 rounded-full bg-black dark:bg-white dark:text-black hover:bg-lime-500 text-white hover:text-black font-semibold transition-all text-sm md:order-2">Start Now <i class="fa-light fa-arrow-right ml-2 hidden md:inline"></i></a>
+			
+			<!-- theme mode -->
+			<button id="thememode" class="md:order-1 text-xl md:text-2xl">
+				<!-- light mode icon -->
+				<i class="fa-light fa-sun flex items-center px-2 hidden dark:block"></i>
+				<!-- dark mode icon -->
+				<i class="fa-light fa-moon flex items-center px-2 dark:hidden"></i>
+			</button>
+		</div>
+	</header>
+
+	<!-- main content -->
+	<main>
+		<!-- hero section -->
+		<section class="relative min-h-screen flex items-center justify-center gap-4 p-4 text-center">
+			<!-- wave animation -->
+			<canvas id="wavesCanvas" class="absolute inset-0 max-w-full z-[-1]"></canvas>
+			<!-- particles animation -->
+			<canvas id="particlesCanvas" class="absolute inset-0 max-w-full z-[-1] dark:invert"></canvas>
+			<!-- bg word decorative -->
+			<span class="absolute bottom-1/4 text-[28vw] text-lime-400 font-bold tracking-tight z-[-1]">creative</span>
+			<!-- title -->
+			<h1 class="max-w-5xl text-5xl md:text-9xl font-bold">We are creative specialist agency</h1>
+		</section>
+		
+		
+		<!-- about section -->
+		<section id="agency" class="relative p-4 md:py-7 md:px-12 grid md:grid-cols-2 gap-24">
+			<!-- image -->
+			<img src="./assets/imgs/designer.webp" class="w-full saturate-0 z-10" alt="">
+			<!-- text -->
+			<div>
+				<h1 class="relative max-w-3xl text-3xl md:text-7xl font-bold mb-12 md:-ml-72 md:mt-60 z-20">We create unique digital experiences.</h1>
+				<div  class="max-w-lg md:ml-24">
+					<p class="text-lg mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias quod eius, nesciunt repudiandae iste est modi placeat neque reiciendis fugit reprehenderit optio, molestias vitae iusto cumque magnam quibusdam consectetur.</p>
+					<!-- button -->
+					<a href="#" class="relative inline-block py-3 px-6 uppercase font-semibold group">
+						<span class="absolute inset-0 w-12 rounded-full bg-lime-500 group-hover:w-full z-[-1] transition-all"></span>
+						Discover Now
+					</a>
+				</div>
+			</div>
+			<!-- bg word decorative -->
+			<span class="absolute right-0 bottom-0 text-[15vw] text-lime-400 font-bold tracking-tight z-[-1]">about</span>
+		</section>
+		
+
+		<!-- project section -->
+		<section id="project" class="p-4 mt-20 md:mt-0 md:py-7 md:px-12">
+			<!-- title -->
+			<div class="flex items-end gap-10 mb-10">
+				<!-- word decorative -->
+				<span class="block -ml-6 md:-ml-20 -mt-20 text-[15vw] text-lime-400 font-bold tracking-tight">project</span>
+				<!-- button -->
+				<a href="#" class="relative inline-block py-3 px-6 mb-4 md:mb-32 md:ml-60 uppercase font-semibold group">
+					<span class="absolute inset-0 w-12 rounded-full bg-lime-500 group-hover:w-full z-[-1] transition-all"></span>
+					Explore more
+				</a>
+			</div>
+
+			<!-- project grid -->
+			<div class="grid md:grid-cols-4 gap-x-8">
+				<!-- item -->
+				<a href="#" class="group">
+					<!-- image -->
+					<div class="relative rounded-lg overflow-hidden shadow-lg">
+						<img src="./assets/imgs/project/project-1.webp" class="saturate-0 group-hover:saturate-100 group-hover:scale-110 transition" alt="" />
+					</div>
+					<!-- name -->
+					<h3 class="text-center text-2xl py-10"><b>Brand iconography</b> - Comunication</h3>
+				</a>
+				
+				<!-- item -->
+				<a href="#" class="md:mt-24 group">
+					<!-- image -->
+					<div class="relative rounded-lg overflow-hidden shadow-lg">
+						<img src="./assets/imgs/project/project-2.webp" class="saturate-0 group-hover:saturate-100 group-hover:scale-110 transition" alt="" />
+					</div>
+					<!-- name -->
+					<h3 class="text-center text-2xl py-10"><b>Creative Advertising</b> - Storytelling</h3>
+				</a>
+				
+				<!-- item -->
+				<a href="#" class="group">
+					<!-- image -->
+					<div class="relative rounded-lg overflow-hidden shadow-lg">
+						<img src="./assets/imgs/project/project-3.webp" class="saturate-0 group-hover:saturate-100 group-hover:scale-110 transition" alt="" />
+					</div>
+					<!-- name -->
+					<h3 class="text-center text-2xl py-10"><b>Brand Identity</b> - Branding</h3>
+				</a>
+				
+				<!-- item -->
+				<a href="#" class="md:mt-24 group">
+					<!-- image -->
+					<div class="relative rounded-lg overflow-hidden shadow-lg">
+						<img src="./assets/imgs/project/project-4.webp" class="saturate-0 group-hover:saturate-100 group-hover:scale-110 transition" alt="" />
+					</div>
+					<!-- name -->
+					<h3 class="text-center text-2xl py-10"><b>Ecommerce</b> - websites</h3>
+				</a>
+				
+				<!-- item -->
+				<a href="#" class="md:-mt-24 group">
+					<!-- image -->
+					<div class="relative rounded-lg overflow-hidden shadow-lg">
+						<img src="./assets/imgs/project/project-5.webp" class="saturate-0 group-hover:saturate-100 group-hover:scale-110 transition" alt="" />
+					</div>
+					<!-- name -->
+					<h3 class="text-center text-2xl py-10"><b>Photography Art</b> - Photos</h3>
+				</a>
+				
+				<!-- item -->
+				<a href="#" class="group">
+					<!-- image -->
+					<div class="relative rounded-lg overflow-hidden shadow-lg">
+						<img src="./assets/imgs/project/project-6.webp" class="saturate-0 group-hover:saturate-100 group-hover:scale-110 transition" alt="" />
+					</div>
+					<!-- name -->
+					<h3 class="text-center text-2xl py-10"><b>Research</b> - SEO</h3>
+				</a>
+				
+				<!-- item -->
+				<a href="#" class="md:-mt-24 group">
+					<!-- image -->
+					<div class="relative rounded-lg overflow-hidden shadow-lg">
+						<img src="./assets/imgs/project/project-7.webp" class="saturate-0 group-hover:saturate-100 group-hover:scale-110 transition" alt="" />
+					</div>
+					<!-- name -->
+					<h3 class="text-center text-2xl py-10"><b>Products</b> - Brainstorming</h3>
+				</a>
+				
+				<!-- item -->
+				<a href="#" class="group">
+					<!-- image -->
+					<div class="relative rounded-lg overflow-hidden shadow-lg">
+						<img src="./assets/imgs/project/project-8.webp" class="saturate-0 group-hover:saturate-100 group-hover:scale-110 transition" alt="" />
+					</div>
+					<!-- name -->
+					<h3 class="text-center text-2xl py-10"><b>Coding App</b> - Develope</h3>
+				</a>
+			</div>
+		</section>
+
+
+		<!-- testimonials section -->
+		<section class="container mx-auto p-4 md:px-12 md:py-20">
+			<div class="flex justify-center items-center gap-y-8 lg:gap-y-0 flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+				<div class="w-full lg:w-2/5">
+					<!-- text -->
+					<h2 class="text-4xl font-bold mb-6">Our Testimonials</h2>
+					<p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam culpa dicta assumenda nulla incidunt repellat.</p>
+					<!-- swiper controls -->
+					<div class="relative flex items-center justify-start gap-4">
+						<!-- prev btn -->
+						<button class="swiper-reviews-prev group flex justify-center items-center bg-lime-400 w-12 h-12 transition-all rounded-full hover:bg-black" data-carousel-prev>
+							<i class="fa-sharp fa-regular fa-arrow-left text-xl text-white group-hover:text-white"></i>
+						</button>
+						<!-- next btn -->
+						<button class="swiper-reviews-next group flex justify-center items-center bg-lime-400 w-12 h-12 transition-all rounded-full hover:bg-black" data-carousel-next>
+							<i class="fa-sharp fa-regular fa-arrow-right text-xl text-white group-hover:text-white"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="w-full md:w-3/5">
+					<!-- swiper container -->
+					<div class="swiper swiper-reviews p-0.5">
+						<div class="swiper-wrapper">
+							<!-- reviews items -->
+							<div class="swiper-slide p-6 group">
+								<!-- stars -->
+								<div class="flex items-center gap-2 mb-4 text-amber-500">
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+								</div>
+								<!-- intro -->
+								<h5 class="font-semibold text-2xl mb-4">The best agency</h5>
+								<!-- text -->
+								<p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ex ipsa voluptatem id neque, ipsam ab reprehenderit repellendus saepe officia, cumque sapiente amet aperiam mollitia maiores sit. Hic, dolore.</p>
+								<!-- name -->
+								<h5>- Alice Doe</h5>
+							</div>
+							
+							<!-- reviews items -->
+							<div class="swiper-slide p-6 group">
+								<!-- stars -->
+								<div class="flex items-center gap-2 mb-4 text-amber-500">
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+								</div>
+								<!-- intro -->
+								<h5 class="font-semibold text-2xl mb-4">More professional</h5>
+								<!-- text -->
+								<p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ex ipsa voluptatem id neque, ipsam ab reprehenderit repellendus saepe officia, cumque sapiente amet aperiam mollitia maiores sit. Hic, dolore.</p>
+								<!-- name -->
+								<h5>- Mike Fury</h5>
+							</div>
+							
+							<!-- reviews items -->
+							<div class="swiper-slide p-6 group">
+								<!-- stars -->
+								<div class="flex items-center gap-2 mb-4 text-amber-500">
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+								</div>
+								<!-- intro -->
+								<h5 class="font-semibold text-2xl mb-4">Unbeatable</h5>
+								<!-- text -->
+								<p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ex ipsa voluptatem id neque, ipsam ab reprehenderit repellendus saepe officia, cumque sapiente amet aperiam mollitia maiores sit. Hic, dolore.</p>
+								<!-- name -->
+								<h5>- Thomas Edis</h5>
+							</div>
+							
+							<!-- reviews items -->
+							<div class="swiper-slide p-6 group">
+								<!-- stars -->
+								<div class="flex items-center gap-2 mb-4 text-amber-500">
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+									<i class="fa-solid fa-star text-lg"></i>
+								</div>
+								<!-- intro -->
+								<h5 class="font-semibold text-2xl mb-4">Fast and capable</h5>
+								<!-- text -->
+								<p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ex ipsa voluptatem id neque, ipsam ab reprehenderit repellendus saepe officia, cumque sapiente amet aperiam mollitia maiores sit. Hic, dolore.</p>
+								<!-- name -->
+								<h5>- Tailor Swift</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- sponsors section -->
+		<section class="bg-slate-500 text-white py-16 px-4 md:py-20 mb-12 md:px-12 text-center">
+			<div class="container mx-auto">
+				<div class="max-w-xl mx-auto">
+					<!-- title -->
+					<h1 class="text-3xl md:text-7xl font-bold mb-8">Create beautiful <span class="text-lime-400">ui design</span>.</h1>
+					<p class="max-w-lg mx-auto mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, maiores obcaecati iusto ullam culpa id minus harum facilis.</p>
+					<!-- cta -->
+					<div class="w-full max-w-sm mx-auto bg-transparent border rounded-full">
+						<!-- form -->
+						<form action="#" method="#" class="flex">
+							<input
+								type="email"
+								placeholder="Enter your email address"
+								class="flex-1 px-6 py-3 m-1 bg-transparent border-none outline-none placeholder:text-gray-200"
+								required
+							/>
+							<!-- button -->
+							<button type="submit" class="relative py-3 px-6 m-1 uppercase font-semibold group">
+								<span class="absolute inset-0 w-12 rounded-full bg-lime-500 group-hover:w-full transition-all z-0"></span>
+								<span class="relative z-10">Join Us</span>
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- sponsors -->
+				<div class="max-w-screen-xl mx-auto mt-20">
+					<div class="flex flex-wrap items-center justify-center gap-8 md:gap-24">
+						<img src="./assets/imgs/sponsors/adobe.svg" class="w-32 md:w-40 invert" alt="">
+						<img src="./assets/imgs/sponsors/facebook.svg" class="w-32 md:w-40 invert" alt="">
+						<img src="./assets/imgs/sponsors/tesla.svg" class="w-32 md:w-40 invert" alt="">
+						<img src="./assets/imgs/sponsors/youtube.svg" class="w-32 md:w-40 invert" alt="">
+						<img src="./assets/imgs/sponsors/amazon.svg" class="w-32 md:w-40 invert" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- blog section -->
+		<section id="blog" class="container mx-auto p-4 md:py-7 md:px-12">
+			<div class="flex items-center justify-between gap-10 mb-10">
+				<!-- title -->
+				<h2 class="max-w-3xl text-3xl md:text-7xl font-bold">Latest <span class="text-lime-400">Posts</span></h2>
+				<!-- button -->
+				<a href="#" class="relative inline-block py-3 px-6 uppercase font-semibold group">
+					<span class="absolute inset-0 w-12 rounded-full bg-lime-500 group-hover:w-full z-[-1] transition-all"></span>
+					Read all post
+				</a>
+			</div>
+			<!-- post grid -->
+			<div class="grid md:grid-cols-4 gap-12 md:gap-8">
+				<!-- post item -->
+				<a href="./post.html" class="font-semibold group">
+					<!-- post image -->
+					<img src="./assets/imgs/blog/post-7.webp" class="w-full rounded saturate-0 group-hover:scale-105 group-hover:saturate-100 transition-all" alt="" />
+					<!-- post info -->
+					<span class="block mt-6 mb-2 uppercase">
+						business &bull; <span class="text-gray-500 dark:text-gray-200">18 Jun 2024</span>
+					</span>
+					<h3 class="text-xl">Amet consectetur adipisicing elit. Fugiat voluptates quis</h3>
+				</a>
+				<!-- post item -->
+				<a href="./post.html" class="font-semibold group">
+					<!-- post image -->
+					<img src="./assets/imgs/blog/post-2.webp" class="w-full rounded saturate-0 group-hover:scale-105 group-hover:saturate-100 transition-all" alt="" />
+					<!-- post info -->
+					<span class="block mt-6 mb-2 uppercase">
+						business &bull; <span class="text-gray-500 dark:text-gray-200">18 Jun 2024</span>
+					</span>
+					<h3 class="text-xl">Placeat suscipit molestiae, voluptas amet assumenda</h3>
+				</a>
+				<!-- post item -->
+				<a href="./post.html" class="font-semibold group">
+					<!-- post image -->
+					<img src="./assets/imgs/blog/post-3.webp" class="w-full rounded saturate-0 group-hover:scale-105 group-hover:saturate-100 transition-all" alt="" />
+					<!-- post info -->
+					<span class="block mt-6 mb-2 uppercase">
+						business &bull; <span class="text-gray-500 dark:text-gray-200">18 Jun 2024</span>
+					</span>
+					<h3 class="text-xl">Inventore id mollitia atque exceptu Saepe officiis</h3>
+				</a>
+				<!-- post item -->
+				<a href="./post.html" class="font-semibold group">
+					<!-- post image -->
+					<img src="./assets/imgs/blog/post-6.webp" class="w-full rounded saturate-0 group-hover:scale-105 group-hover:saturate-100 transition-all" alt="" />
+					<!-- post info -->
+					<span class="block mt-6 mb-2 uppercase">
+						business &bull; <span class="text-gray-500 dark:text-gray-200">18 Jun 2024</span>
+					</span>
+					<h3 class="text-xl">Ovident numquam praese facilis accusantium</h3>
+				</a>
+			</div>
+		</section>
+
+
+		<!-- cta section -->
+		<section class="grid grid-cols-2 gap-12 overflow-hidden leading-none mb-20">
+			<!-- word decorative -->
+			<span class="text-[24vw] font-bold tracking-tighter z-[-1]">start</span>
+			<!-- word decorative -->
+			<span class="text-[24vw] text-lime-400 font-bold tracking-tighter z-[-1] text-right pr-10">now</span>
+		</section>
+
+
+		<!-- contact section -->
+		<section id="contact" class="relative mb-12">
+			<div class="container mx-auto p-4 md:py-7 md:px-12 grid md:grid-cols-2 gap-10 md:gap-24">
+				<!-- title -->
+				<h2 class="max-w-xl text-3xl md:text-7xl font-bold">Let us help you get your project started.</h2>
+				
+				<!-- contact form -->
+				<div class="md:ml-20 mt-6">
+					<h3 class="text-3xl text-medium mb-10">Tell us about your <b>project</b>.</h3>
+					<!-- form -->
+					<form action="#" method="#" class="space-y-6">
+						<!-- field -->
+						<label class="relative block" for="name">
+							<!-- icon -->
+							<i class="fa-light fa-user absolute right-0 p-4 text-xl"></i>
+							<!-- input -->
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Your Full Name *"
+								class="w-full border-b border-black py-4 outline-none"
+								required
+							/>
+						</label>
+
+						<!-- field -->
+						<label class="relative block" for="email">
+							<!-- icon -->
+							<i class="fa-light fa-envelope absolute right-0 p-4 text-xl"></i>
+							<!-- input -->
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Your Email Address *"
+								class="w-full border-b border-black py-4 outline-none"
+								required
+							/>
+						</label>
+						
+						<!-- field -->
+						<label class="relative block" for="subject">
+							<!-- icon -->
+							<i class="fa-light fa-user absolute right-0 p-4 text-xl"></i>
+							<!-- input -->
+							<input
+								type="text"
+								name="subject"
+								id="subject"
+								placeholder="Subject"
+								class="w-full border-b border-black py-4 outline-none"
+							/>
+						</label>
+
+						<!-- field -->
+						<label class="relative block !mb-8" for="message">
+							<!-- icon -->
+							<i class="fa-light fa-message-dots absolute right-0 p-4 text-xl"></i>
+							<!-- input -->
+							<textarea name="message" id="message" rows="5" placeholder="Your Message" class="w-full border-b border-black py-4 outline-none"></textarea>
+						</label>
+
+						<!-- button -->
+						<button type="submit" class="inline-block relative inline-block py-3 px-6 uppercase font-semibold float-right group">
+							<span class="absolute inset-0 w-12 rounded-full bg-lime-500 group-hover:w-full z-[-1] transition-all"></span>
+							Send Now
+						</button>
+					</form>
+				</div>
+			</div>
+			<!-- bg word decorative -->
+			<span class="absolute left-0 -bottom-20 text-[15vw] text-lime-400 font-bold tracking-tight z-[-1]">contact</span>
+		</section>
+	</main>
+	
+
+	<!-- footer -->
+	<footer>
+		<div class="container mx-auto px-6 py-20">
+			<div class="flex flex-wrap items-center justify-between gap-10 pb-12">
+				<p class="text-3xl text-medium">Let's create something amazing by <a href="#" class="font-bold underline cursor-pointer hover:text-lime-400 transition-all">working together</a>?</p>
+
+				<!-- your logo here -->
+				<a href="/" class="flex items-center p-2">
+					<!-- light logo -->
+					<img src="./assets/imgs/logo.svg" class="dark:hidden w-56" alt="Cyberwind template logo">
+					<!-- dark logo -->
+					<img src="./assets/imgs/logo-white.svg" class="hidden dark:block w-56" alt="Cyberwind template logo">
+				</a>
+			</div>
+
+			<div class="flex flex-wrap items-center justify-between gap-10">
+				<!-- address -->
+				<div class="flex gap-10">
+					<div>
+						<p class="font-bold text-lg mb-2">Cyberwind - Venice</p>
+						<address class="not-italic">Your Address 00,<br>00000 - Venice - Italy</address>
+					</div>
+					<div>
+						<p class="font-bold text-lg mb-2">Cyberwind - Rome</p>
+						<address class="not-italic">Your Address 00,<br>00000 - Rome - Italy</address>
+					</div>
+				</div>
+				<!-- contact info -->
+				<div class="text-left md:text-right">
+					<!-- phone -->
+					<a href="tel:321123456" class="block cursor-pointer hover:text-lime-400 transition-all">
+						<i class="fa-light fa-phone mr-2 text-lg"></i> +39 321 123456
+					</a>
+					<!-- email -->
+					<a href="emailto:your@email.com" class="block font-bold underline cursor-pointer hover:text-lime-400 transition-all">
+						<i class="fa-light fa-envelope mr-2 text-lg"></i> yuor@email.com
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- copyright bar -->
+		<div class="border-t">
+			<div class="container mx-auto flex flex-col md:flex-row gap-6 items-center justify-between py-10">
+				<!-- navigation -->
+				<nav>
+					<ul class="flex flex-row gap-6 md:gap-10 font-semibold">
+						<li>
+							<a href="#top" class="hover:text-lime-500 transition-all">Home</a>
+						</li>
+						<li>
+							<a href="#agency" class="hover:text-lime-500 transition-all">Agency</a>
+						</li>
+						<li>
+							<a href="#project" class="hover:text-lime-500 transition-all">Project</a>
+						</li>
+						<li>
+							<a href="#blog" class="hover:text-lime-500 transition-all">Blog</a>
+						</li>
+						<li>
+							<a href="#contact" class="hover:text-lime-500 transition-all">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				
+				<!-- copyright -->
+				<p>&copy; Cyberwind <span id="thisYear"></span>. Developed by <a href="/" class="text-lime-400 font-semibold transition">Travolgi</a>.</p>
+			</div>
+		</div>
+	</footer>
+
+	
+	<!-- social links -->
+	<div class="hidden md:block fixed left-0 top-3/4 transform -translate-y-1/2 p-4 font-bold z-30">
+		<div class="flex flex-col flex-col-reverse items-center gap-4">
+			<span class="text-sm transform -rotate-90 pb-2">Follow us</span>
+			<div class="border-l border-black h-8 mb-4"></div>
+			<div class="flex flex-col items-center gap-2">
+				<!-- social icon -->
+				<a href="#" class="text-sm hover:text-lime-400 transition-all">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+				<!-- social icon -->
+				<a href="#" class="text-sm hover:text-lime-400 transition-all">
+					<i class="fa-brands fa-dribbble"></i>
+				</a>
+				<!-- social icon -->
+				<a href="#" class="text-sm hover:text-lime-400 transition-all">
+					<i class="fa-brands fa-x-twitter"></i>
+				</a>
+				<!-- social icon -->
+				<a href="#" class="text-sm hover:text-lime-400 transition-all">
+					<i class="fa-brands fa-behance"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- scrool top button -->
+	<div class="fixed -right-10 md:right-0 top-3/4 transform -translate-y-1/2" id="scroolTop">
+		<div class="text-xs font-bold transform -rotate-90 py-2 px-4 hover:text-lime-400 transition-all">
+			SCROLL TO TOP <i class="fa-regular fa-arrow-right ml-2"></i>
+		</div>
+	</div>
+
+	<!-- js -->
+	<script src="./assets/js/swiper-bundle.min.js"></script>
+	<script src="./assets/js/main.js" defer></script>
+	<script src="./assets/js/canvas.js" defer></script>
+</body>
+</html>
